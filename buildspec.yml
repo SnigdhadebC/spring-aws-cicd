@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "Inside pre_build"
+  build:
+    commands:
+      - echo "Inside build"
+      - mvn prepare-package war:exploded
+  post_build:
+    commands:
+      - echo "Inside post_build
+artifacts:
+  files:
+    - target/deploy/**
