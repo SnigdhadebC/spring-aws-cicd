@@ -6,10 +6,10 @@ phases:
   build:
     commands:
       - echo "Inside build"
-      - mvn prepare-package war:exploded
+      - mvn clean package
   post_build:
     commands:
       - echo "Inside post_build.."
 artifacts:
   files:
-    - target/deploy/**/*
+    - target/spring-aws-demo.jar
