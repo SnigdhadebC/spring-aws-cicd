@@ -12,4 +12,4 @@ phases:
       - echo "Inside post_build"
 artifacts:
   files:
-    - target/deploy/**
+    - deploy/**/*
