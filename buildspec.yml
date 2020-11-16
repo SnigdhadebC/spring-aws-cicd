@@ -9,7 +9,7 @@ phases:
       - mvn prepare-package war:exploded
   post_build:
     commands:
-      - echo "Inside post_build
+      - echo "Inside post_build"
 artifacts:
   files:
     - target/deploy/**
